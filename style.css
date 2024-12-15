@@ -1,0 +1,222 @@
+body.noto-sans-kr-<uniquifier> {
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+noto-sans-kr- {
+    "Noto Sans KR", serif;
+}
+
+section {
+    scroll-margin-top: 70px; /* 네비게이션 바 높이만큼 상단 여백 */
+  }
+  
+/* 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #000000 !important;
+}
+
+/* 네비게이션 바 글자 크기 및 볼드체 설정 */
+.navbar-nav .nav-link {
+    font-size: 18px;  /* 글자 크기 설정 */
+    font-weight: bold;  /* 볼드체로 설정 */
+}
+
+/* 네비게이션 바 전체 텍스트 크기와 볼드체 */
+.navbar-brand .large-text {
+    font-size: 24px;  /* 큰 글씨 크기 설정 */
+    font-weight: bold;  /* 볼드체 설정 */
+}
+
+.navbar-brand .small-text {
+    font-size: 16px;  /* 작은 글씨 크기 설정 */
+    font-weight: normal;  /* 기본체로 설정 */
+}
+
+/* 로고 고정 */
+.logo-container {
+    position:absolute;  /* 로고를 고정시킴 */
+    top: 20px;  /* 상단 여백 */
+    left: 10px;  /* 왼쪽 여백 */
+    z-index: 10;  /* 다른 요소들 위에 놓이게 */
+}
+
+/* 네비게이션 바 내리기 */
+.navbar {
+    position: relative;  /* 네비게이션 바는 스크롤에 따라 움직임 */
+    margin-top: 50px;  /* 로고 아래로 네비게이션 바를 내리기 위한 여백 */
+    z-index: 5;  /* 로고보다 뒤에 배치 */
+}
+
+/* 검색창 위치 */
+.search-bar-container {
+    margin-top: 30px;  /* 네비게이션 바 아래로 내려오기 위한 여백 */
+    padding: 0px;
+    text-align: left;  /* 왼쪽 정렬 */
+}
+
+.search-bar-container form {
+    margin-left: 10px;  /* 왼쪽 여백 */
+}
+
+/* 로고 옆 텍스트 컨테이너 */
+.brand-text {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+/* 큰 글씨 스타일 */
+.large-text {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+/* 작은 글씨 스타일 */
+.small-text {
+    font-size: 15px;
+    color: #000000;
+    display: block;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items:;
+}
+
+/* 네비게이션 바와 검색창을 같은 줄에 배치 */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;  /* 두 요소를 양 끝에 배치 */
+    align-items: center;  /* 세로로 중앙 정렬 */
+    padding: 10px;
+    margin-top: 30px;  /* 네비게이션 바와 검색창을 아래로 내림 */
+}
+
+/* 나머지 스타일은 그대로 유지 */
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start;  /* 검색창을 왼쪽 끝에 배치 */
+    align-items: center;
+}
+
+.search-bar-container form {
+    display: flex;  /* 검색 버튼과 입력 필드를 수평 배치 */
+}
+
+.search-bar-container button {
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar-container button i {
+    color: #000000;
+    font-size: 18px;
+}
+
+.search-bar-container input {
+    margin-left: 10px;  /* 버튼과 입력 필드 사이 여백 */
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;  /* 네비게이션 바를 오른쪽 끝에 배치 */
+    align-items: center;
+}
+
+/* 작은 화면에서 검색 아이콘 위치 조정 */
+@media (max-width: 767px) {
+    .search-bar-container form {
+        width: 100%;
+    }
+}
+
+/* 네비게이션 바와 구분을 위해 추가된 줄 스타일 */
+.navbar-container {
+    border-bottom: 2px solid #000000;  /* 네비게이션 바 아래 줄 추가 */
+    margin-bottom: 70px;  /* 줄과 이미지 사이 여백 */
+}
+
+/* 미술관 그림을 중앙 정렬 */
+#home .container {
+    text-align: center;  /* 가로 중앙 정렬 */
+}
+
+/* 이미지 스타일 */
+.artwork-img {
+    width: 100%;  /* 이미지의 가로 크기 설정 */
+    max-width: 120spx;  /* 최대 너비 설정 */
+    height: auto;  /* 이미지 비율 유지 */
+}
+
+/* 이미지 고정 크기 설정 */
+.fixed-img {
+    height: 150px; /* 이미지 높이 설정 */
+    object-fit: cover; /* 이미지 비율 유지 및 넘치는 부분 자르기 */
+  }
+
+  /* 슬라이드 이미지 크기 조정 */
+.carousel-item img {
+    height: 250px; /* 원하는 높이 설정 (예: 400px) */
+    object-fit: cover; /* 이미지 비율 유지, 넘치는 부분 자르기 */
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+  }
+
+ /* 카드 이미지 크기 고정 및 비율 유지 */
+ .fixed-img {
+    height: 200px; /* 높이를 고정 */
+    object-fit: cover; /* 이미지가 카드 크기에 맞게 자르기 */
+  }
+
+  /* 이미지 오버 효과 */
+.card-img-top {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  /* 연락처 아이콘*/
+.social-icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* 아이콘을 오른쪽으로 정렬 */
+  }
+  
+  .social-icon {
+    font-size: 100px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff;
+  }
+  
+  .social-icon svg {
+    font-size: 500px;
+  }
+
+  .bg-light-gray {
+    background-color: #f0f0f0; /* 연한 그레이 색상 */
+  }
+
+  .link-blue {
+    color: #3838ab; /* 진한 블루 색상 */
+  }
+
+  
